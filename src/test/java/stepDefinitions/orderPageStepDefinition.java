@@ -39,8 +39,9 @@ public class orderPageStepDefinition {
 
 	    @Then("user verifies if the order placed and returns to homepage")
 	    public void verifies_if_the_order_placed_sucessfully_msg_is_displayed() throws Throwable {
-	    	
-	    	
+	    	System.out.print("Changed from Y user");
+	    	System.out.print("Changed from Y useragain");
+
 	    	
 			Thread.sleep(7000);
 			Assert.assertTrue(productpage.gettitle().contains("GreenKart"));
