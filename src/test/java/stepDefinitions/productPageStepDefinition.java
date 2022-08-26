@@ -29,6 +29,8 @@ public class productPageStepDefinition {
     public void user_is_on_greenkart_page() throws Throwable {
 			Assert.assertTrue(productpage.gettitle().contains("GreenKart"));
 			System.out.print("Changed from X user");
+			System.out.print("Changes done in develop branch");
+
     }
 
 	@When("^User orders (.+) vegetables with mentioned (.+)$")
@@ -40,6 +42,10 @@ public class productPageStepDefinition {
     	int number=Integer.parseInt(pquantity);
     	productpage.sendincrement(number);
     	Thread.sleep(2000);
+    	
+    	
+		System.out.print("Changes done in develop branch");
+
     }
 	
 	
