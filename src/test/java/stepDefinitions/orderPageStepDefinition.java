@@ -41,7 +41,8 @@ public class orderPageStepDefinition {
 	    public void verifies_if_the_order_placed_sucessfully_msg_is_displayed() throws Throwable {
 	    	System.out.print("Changed from Y user");
 	    	System.out.print("Changed from Y useragain");
-
+	    	System.out.print("Changed from X user");
+	    	System.out.print("Changed from X useragain");
 	    	
 			Thread.sleep(7000);
 			Assert.assertTrue(productpage.gettitle().contains("GreenKart"));

@@ -28,7 +28,7 @@ public class productPageStepDefinition {
 	@Given("User is on Greenkart page")
     public void user_is_on_greenkart_page() throws Throwable {
 			Assert.assertTrue(productpage.gettitle().contains("GreenKart"));
-	
+			System.out.print("Changed from X user");
     }
 
 	@When("^User orders (.+) vegetables with mentioned (.+)$")
